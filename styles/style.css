@@ -1,0 +1,305 @@
+.header {
+  background: #fff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.header__burger {
+  background: #70C05B;
+  border-radius: 4px;
+}
+.header__input {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Open Sans";
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 445px;
+}
+.header__navList {
+  text-align: center;
+}
+.header__navText {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #414141;
+}
+.header__userAvatar {
+  width: 40px;
+}
+.header__userName {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.header__userBtn {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 217px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.header__titlebackground {
+  background: url("../../images/bg.header2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.header__img {
+  height: 202px;
+}
+.header__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #414141;
+  align-self: center;
+}
+
+.input__search {
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  osition: relative;
+  padding: 0 42px 0 16px;
+  outline: none;
+  transition: 0.5s;
+  width: 375px;
+  height: 40px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.input__search:hover {
+  box-shadow: 2px 2px -2px -2px #70C05B;
+}
+.input__icon {
+  background: url("../../images/icons/search.svg");
+  position: absolute;
+  cursor: pointer;
+  color: #bdbdbd;
+  transition: color 0.15s ease-in-out;
+  top: 26px;
+  margin: 0 13px;
+}
+
+.nav__icon {
+  width: 21px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1208px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #E5E5E5;
+}
+
+.burger__check {
+  width: 140px;
+  height: 40px;
+  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+}
+.burger__lines {
+  position: absolute;
+  z-index: 70;
+  padding: 13px;
+  top: 17px;
+}
+.burger__text {
+  position: absolute;
+  z-index: 70;
+  color: #fff;
+  margin: 8px 8px 8px 50px;
+  top: 17px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.burger__text__row {
+  display: flex;
+  position: fixed;
+}
+.burger__line {
+  display: block;
+  width: 19px;
+  height: 1px;
+  background: #fff;
+}
+.burger__line:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.sale__pages {
+  display: flex;
+  justify-content: space-between;
+}
+.sale__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.sale__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.sale__btn {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 168px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.sale__btnText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.sale__procent {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  background: #FF6633;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card {
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.card__figure {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card__img {
+  width: 100%;
+}
+.card__like {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.card__text {
+  display: flex;
+  justify-content: space-between;
+}
+.card__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+}
+.card__subject {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.card__subtitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+}
+.card__copy {
+  display: flex;
+  justify-content: space-between;
+}
+.card__desc {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  margin-bottom: 8px;
+}
+.card__reyting {
+  margin-bottom: 8px;
+}
+.card__btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 256px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  padding: 8px;
+  color: #70C05B;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card__btn:hover {
+  background: #FF6633;
+  color: #FFFFFF;
+  border: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card__body {
+  padding: 8px;
+}/*# sourceMappingURL=style.css.map */

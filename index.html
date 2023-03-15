@@ -1,13 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Северяночка</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images/icons/logomobile.svg" />
+    <title>Северяночка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <a href="#">
+            <img src="./images/icons/logo.svg" alt="" class="header__logo" />
+          </a>
+          <div class="header__burger">
+            <input type="checkbox" class="burger__check" />
+            <div class="burger__row">
+              <div class="burger__lines">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </div>
+              <p class="burger__text">Каталог</p>
+            </div>
+          </div>
+          <div class="header__input">
+            <input
+              class="input__search"
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Найти товар"
+            />
+            <img src="./images/icons/search.svg" alt="" class="input__icon" />
+          </div>
+          <div class="header__nav">
+            <div class="header__navList">
+              <a href=""
+                ><img
+                  src="./images/icons/like.svg"
+                  alt="heart"
+                  class="nav__icon"
+                />
+                <p class="header__navText">Избранное</p></a
+              >
+            </div>
+            <div class="header__navList">
+              <a href=""
+                ><img
+                  src="./images/icons/orders.svg"
+                  alt=""
+                  class="nav__icon"
+                />
+                <p class="header__navText">Заказы</p></a
+              >
+            </div>
+            <div class="header__navList">
+              <a href=""
+                ><img
+                  src="./images/icons/shopping.svg"
+                  alt=""
+                  class="nav__icon"
+                />
+                <p class="header__navText">Корзина</p></a
+              >
+            </div>
+            <div class="header__usermenu">
+              <button class="header__userBtn">
+                <img
+                  srcset="./images/avatar.png"
+                  alt=""
+                  class="header__userAvatar"
+                />
+                <p class="header__userName">Алексей</p>
+                <img src="./images/icons/Shape.svg" alt="стрелка" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="header__titlebackground">
+          <img
+            class="header__img"
+            src="./images/img.png"
+            srcset="./images/img@2x.png"
+            alt=""
+          />
+          <p class="header__title">Доставка бесплатно от 1000 ₽</p>
+        </div>
+      </section>
+      <section class="sale">
+        <div class="container">
+          <div class="sale__header">
+            <p class="sale__title">Акции</p>
+            <button class="sale__btn">
+              <p class="sale__btnText">Все акции</p>
+              <img width="7" src="./images/icons/Shaper.svg" alt="стрелка" />
+            </button>
+          </div>
+          <div class="sale__pages">
+            <div class="card">
+              <div class="card__figure">
+                <button class="card__like">
+                  <img
+                    width="21"
+                    src="./images/icons/like.svg"
+                    alt=""
+                    class="like__img"
+                  />
+                </button>
+                <img srcset="./images/blini.png" alt="" class="card__img" />
+                <p class="sale__procent">-50%</p>
+              </div>
+              <div class="card__body">
+                <div class="card__text">
+                  <div class="card__title">44,50 ₽</div>
+                  <div class="card__subject">50,50 ₽</div>
+                </div>
+                <div class="card__copy">
+                  <p class="card__subtitle">С картой</p>
+                  <p class="card__subtitle">Обычная</p>
+                </div>
+                <div class="card__desc">Г/Ц Блинчики с мясом вес, Россия</div>
+                <div class="card__reyting">
+                  <div>
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="card__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__figure">
+                <button class="card__like">
+                  <img
+                    width="21"
+                    src="./images/icons/like.svg"
+                    alt=""
+                    class="like__img"
+                  />
+                </button>
+                <img srcset="./images/milk.png" alt="" class="card__img" />
+                <p class="sale__procent">-50%</p>
+              </div>
+              <div class="card__body">
+                <div class="card__text">
+                  <div class="card__title">44,50 ₽</div>
+                  <div class="card__subject">50,50 ₽</div>
+                </div>
+                <div class="card__copy">
+                  <p class="card__subtitle">С картой</p>
+                  <p class="card__subtitle">Обычная</p>
+                </div>
+                <div class="card__desc">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</div>
+                <div class="card__reyting">
+                  <div>
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="card__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__figure">
+                <button class="card__like">
+                  <img
+                    width="21"
+                    src="./images/icons/like.svg"
+                    alt=""
+                    class="like__img"
+                  />
+                </button>
+                <img srcset="./images/blini.png" alt="" class="card__img" />
+                <p class="sale__procent">-50%</p>
+              </div>
+              <div class="card__body">
+                <div class="card__text">
+                  <div class="card__title">44,50 ₽</div>
+                  <div class="card__subject">50,50 ₽</div>
+                </div>
+                <div class="card__copy">
+                  <p class="card__subtitle">С картой</p>
+                  <p class="card__subtitle">Обычная</p>
+                </div>
+                <div class="card__desc">Г/Ц Блинчики с мясом вес, Россия</div>
+                <div class="card__reyting">
+                  <div>
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="card__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__figure">
+                <button class="card__like">
+                  <img
+                    width="21"
+                    src="./images/icons/like.svg"
+                    alt=""
+                    class="like__img"
+                  />
+                </button>
+                <img srcset="./images/blini.png" alt="" class="card__img" />
+                <p class="sale__procent">-50%</p>
+              </div>
+              <div class="card__body">
+                <div class="card__text">
+                  <div class="card__title">44,50 ₽</div>
+                  <div class="card__subject">50,50 ₽</div>
+                </div>
+                <div class="card__copy">
+                  <p class="card__subtitle">С картой</p>
+                  <p class="card__subtitle">Обычная</p>
+                </div>
+                <div class="card__desc">Г/Ц Блинчики с мясом вес, Россия</div>
+                <div class="card__reyting">
+                  <div>
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting1.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                    <img
+                      src="./images/icons/reyting0.svg"
+                      alt=""
+                      class="stars"
+                    />
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <button class="card__btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

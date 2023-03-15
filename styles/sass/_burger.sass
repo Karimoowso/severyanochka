@@ -1,0 +1,35 @@
+.burger
+  &__check
+    width: 140px
+    height: 40px
+    z-index: 100
+    opacity: 0
+    cursor: pointer    
+  &__lines
+    position: absolute
+    z-index: 70
+    padding: 13px
+    top: 17px
+  &__text
+    position: absolute
+    z-index: 70
+    color: #fff
+    margin: 8px 8px 8px 50px
+    top: 17px
+    font-family: 'Rubik'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    &__row
+      display: flex
+      position: fixed
+
+  &__line
+    display: block
+    width: 19px
+    height: 1px
+    background: #fff
+    &:not(:last-child)
+      margin-bottom: 5px
+      
